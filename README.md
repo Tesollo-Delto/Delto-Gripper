@@ -59,7 +59,7 @@ If you use a version other than Kinetic, it cannot guarantee performance.
         
           roslaunch delto gazebo.launch
           
-      ![ScreenShot](https://raw.github.com/TESOLLO-GIT/Delto-Gripper/master/img.png)
+      ![ScreenShot](https://raw.github.com/TESOLLO-GIT/Delto-Gripper/master/img001.png)
       
       Click the Play button from Gazebo.
           
