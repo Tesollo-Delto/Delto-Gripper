@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the official release to control Delto-Gripper with ROS Kinetic.
+This is the official release to control Delto-Gripper with ROS.
 
 This document summarizes basic information for using Delto-Gripper.
 
@@ -11,11 +11,16 @@ The Delto-gripper has three fingers, and each finger is controlled by four indep
 
 ## ROS Packages for Delto-Gripper
 
-Version kinetic + Ubuntu 16.04
+The correct action was confirmed in the specified version.
 
-If you use a version other than Kinetic, it cannot guarantee performance.
++ kinetic + Ubuntu 16.04
++ melodic + Ubuntu 18.04
++ noetic + Ubuntu 20.04
+
+If you use an unspecified version, it cannot guarantee performance.
 
 ## Run Rviz & Gazebo
+  + ROS [Install](https://wiki.ros.org/ROS/Installation)
 
   + Gazebo Install
   
@@ -34,11 +39,11 @@ If you use a version other than Kinetic, it cannot guarantee performance.
     
     + Install additional Packages
    
-      If ROS is installed with ros-kinetic-desktop-full option, additional packages may be required.
+      If ROS is installed with ros-<DISTRO>-desktop-full option, additional packages may be required.
     
-            sudo apt-get install ros-kinetic-ros-control
-            sudo apt-get install ros-kinetic-ros-controllers
-            sudo apt-get install ros-kinetic-gzeobo-ros-control
+            sudo apt-get install ros-<DISTRO>-ros-control
+            sudo apt-get install ros-<DISTRO>-ros-controllers
+            sudo apt-get install ros-<DISTRO>-gazebo-ros-control
     
   + Build
 

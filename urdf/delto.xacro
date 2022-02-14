@@ -7,7 +7,7 @@
   <xacro:include filename="$(find delto)/urdf/delto.gazebo" />
   
   <link name="world"/>
-  <joint name="base_link"
+  <joint name="base_joint"
     type="fixed">
     <origin
       xyz="0 0 0"
