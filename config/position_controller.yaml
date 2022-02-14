@@ -1,0 +1,67 @@
+delto:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  # JointEffortController / JointPositionController
+  finger1_1_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger1_joint1
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger1_2_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger1_joint2
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger1_3_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger1_joint3
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger1_4_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger1_joint4
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger2_1_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger2_joint1
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger2_2_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger2_joint2
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger2_3_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger2_joint3
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger2_4_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger2_joint4
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger3_1_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger3_joint1
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger3_2_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger3_joint2
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger3_3_effort:
+    type: effort_controllers/JointEffortController
+    joint: finger3_joint3
+    pid: {p: 1.0, i: 0.1, d: 0.0}
+
+  finger3_4_effort:
+    type: effort_controllers/JointPositionController
+    joint: finger3_joint4
+    pid: {p: 7000.0, i: 0.1, d: 300.0}

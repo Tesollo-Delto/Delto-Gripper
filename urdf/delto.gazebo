@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<robot>
+
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/delto</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+  <!-- World -->
+  <gazebo reference="world">
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger1_link1">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger1_link2">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger1_link3">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger1_link4">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+
+  <gazebo reference="finger2_link1">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger2_link2">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger2_link3">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger2_link4">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+
+  <gazebo reference="finger3_link1">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger3_link2">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger3_link3">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <gazebo reference="finger3_link4">
+    <selfCollide>true</selfCollide>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+</robot>

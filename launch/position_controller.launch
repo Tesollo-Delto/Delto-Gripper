@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<launch>
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find delto)/config/position_controller.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node pkg="controller_manager" type="spawner" name="controller_spawner" respawn="false"
+        output="screen" ns="/delto" args="joint_state_controller
+                                            finger1_1_effort
+                                            finger1_2_effort
+                                            finger1_3_effort
+                                            finger1_4_effort
+                                            finger2_1_effort
+                                            finger2_2_effort
+                                            finger2_3_effort
+                                            finger2_4_effort
+                                            finger3_1_effort
+                                            finger3_2_effort
+                                            finger3_3_effort
+                                            finger3_4_effort"/>
+
+</launch>
