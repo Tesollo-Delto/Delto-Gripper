@@ -22,6 +22,11 @@ If you use an unspecified version, it cannot guarantee performance.
 ## Run Rviz & Gazebo
   + ROS [Install](https://wiki.ros.org/ROS/Installation)
 
+    You may need additional installation for some packages. <br/>
+    example)
+
+        sudo apt install ros-<DISTRO>-joint-state-publisher-gui
+
   + Gazebo Install
   
     Install ROS-Gazebo package.
@@ -41,9 +46,9 @@ If you use an unspecified version, it cannot guarantee performance.
    
       If ROS is installed with ros-<DISTRO>-desktop-full option, additional packages may be required.
     
-            sudo apt-get install ros-<DISTRO>-ros-control
-            sudo apt-get install ros-<DISTRO>-ros-controllers
-            sudo apt-get install ros-<DISTRO>-gazebo-ros-control
+            sudo apt install ros-<DISTRO>-ros-control
+            sudo apt install ros-<DISTRO>-ros-controllers
+            sudo apt install ros-<DISTRO>-gazebo-ros-control
     
   + Build
 
